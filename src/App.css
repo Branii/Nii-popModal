@@ -11,7 +11,7 @@
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 1;
-  overflow: hidden;
+  overflow: none;
 }
 
 .cover{
@@ -23,10 +23,10 @@
 .modal {
   width: 450px;
   height: 600px;
-  position: absolute;
+  position: sticky;
+  margin-top:60px;
   background-color: white;
   z-index: 1;
-  /* border-bottom: solid 8px #aaa; */
 }
 
 .header{

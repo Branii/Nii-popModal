@@ -26,7 +26,7 @@ const NiiModal = (props) => {
   return (
     <>
       <div className="overlay" onClick={closeModal}></div>
-      <div className="cover" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div className="cover">
       <div className="modal">
         <div className="header">
           <img src={headerlogo} className="headerlogo" alt="logo" />
