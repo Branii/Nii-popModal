@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NiiModal from './NiiModal';
+import { useState } from 'react';
 
 function App() {
+
+  const [openmodal, setOpenModal] = useState('hide')
+
+  const handleClick = (e) => {
+    setOpenModal((holder) => {
+      return holder =='show' ? 'hide' :'show'
+    });
+  }
+
+  const closeModal = () => {
+    setOpenModal('hide');
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button onClick={handleClick}>Show NiiModal</button>
+      {/* {openmodal === 'show' ? <NiiModal closemodal={closeModal}/> : null} */}
+      {<NiiModal closemodal={closeModal}/>}
+    </>
   );
 }
 
