@@ -1,27 +1,25 @@
-
-import './App.css';
-import NiiModal from './NiiModal';
-import { useState } from 'react';
+import "./App.css";
+import NiiModal from "./NiiModal";
+import { useState } from "react";
 
 function App() {
-
-  const [openmodal, setOpenModal] = useState('hide')
+  const [openmodal, setOpenModal] = useState("hide");
 
   const handleClick = (e) => {
     setOpenModal((holder) => {
-      return holder =='show' ? 'hide' :'show'
+      return holder == "show" ? "hide" : "show";
     });
-  }
+  };
 
   const closeModal = () => {
-    setOpenModal('hide');
-  }
+    setOpenModal("hide");
+  };
 
   return (
     <>
       <button onClick={handleClick}>Show NiiModal</button>
-      {/* {openmodal === 'show' ? <NiiModal closemodal={closeModal}/> : null} */}
-      {<NiiModal closemodal={closeModal}/>}
+      {openmodal === 'show' ? <NiiModal closemodal={closeModal} modalstatus={openmodal} /> : null}
+      {/* {<NiiModal closemodal={closeModal} modalstatus={openmodal}/>} */}
     </>
   );
 }
