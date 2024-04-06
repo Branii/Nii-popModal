@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <button onClick={handleClick}>Show NiiModal</button>
+      <button onClick={handleClick}>Show Nii-Modal</button>
       {openmodal === 'show' ? <NiiModal closemodal={closeModal} modalstatus={openmodal} /> : null}
       {/* {<NiiModal closemodal={closeModal} modalstatus={openmodal}/>} */}
     </>
