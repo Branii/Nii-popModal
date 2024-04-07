@@ -77,3 +77,4 @@ const NiiModal = (props) => {
 };
 
 export default NiiModal;
+Nii-popModal
