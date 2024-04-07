@@ -1,5 +1,5 @@
 import "./App.css";
-import NiiModal from "./NiiModal";
+import NiiModal from "./component/NiiModal";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 

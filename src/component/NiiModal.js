@@ -3,7 +3,7 @@ import Bounce from "bounce.js";
 import BeatLoader from "react-spinners/BeatLoader";
 import { FaDice } from "react-icons/fa6";
 import { IoCloseCircleSharp } from "react-icons/io5";
-import headerlogo from "./flat.png";
+import headerlogo from "../flat.png";
 
 const NiiModal = (props) => {
   const { modalstatus, closemodal, toast } = props;
