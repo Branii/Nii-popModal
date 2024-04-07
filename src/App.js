@@ -7,7 +7,7 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const notify = () => {
-    toast.success('Bet submitted successfully', {
+    toast.success('Bet submitted successfully.', {
       style: {
         border: '1px solid #ffc61c',
         padding: '16px',
